@@ -166,6 +166,9 @@
     .slider_logo_ocop{
         font-size: 0.8rem;
     }
+    .slick-list.draggable {
+        padding: 0px 0px 15px !important;
+    }
    
 }
 
@@ -306,6 +309,9 @@
 .slider_logo_ocop {
    font-size: 0.77rem;
 }
+.slick-list.draggable {
+    padding: 0px 0px 15px !important;
+}
 
 }
 @media all and (max-width:768px){
@@ -360,7 +366,9 @@
     .slider_logo_ocop {
        font-size: 0.77rem;
     }
-
+    .slick-list.draggable {
+        padding: 0px 0px 15px !important;
+    }
 }
 
 @media all and (max-width:600px){
@@ -550,7 +558,9 @@
   
     font-size: 0.8rem;
 }
-
+.slick-list.draggable {
+    padding: 0px 0px 15px !important;
+}
 }
 
 @media all and (max-width:480px){
@@ -782,6 +792,9 @@
 #icon_mute1, #icon_unmute1, #icon_rotate1, #icon_unrotate1{
     display: block;
 }
+.slick-list.draggable {
+    padding: 0px 0px 15px !important;
+}
 
 }
 
@@ -1012,6 +1025,9 @@ h5{
 }
 #icon_mute1, #icon_unmute1, #icon_rotate1, #icon_unrotate1{
     display: block;
+}
+.slick-list.draggable {
+    padding: 0px 0px 15px !important;
 }
     
 }

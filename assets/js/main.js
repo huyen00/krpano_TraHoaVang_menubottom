@@ -55,7 +55,6 @@ $(".image_tra").click(function(){
 
 // click video
 $(document).ready(function(){
-  // $(".video").hide();
   $(".close").click(function(){
     $(".video").hide();
   });
@@ -68,7 +67,6 @@ $(document).ready(function(){
 });
 // click form
 $(document).ready(function(){
-  // $(".form").hide();
   $(".close").click(function(){
     $(".form").hide();
   });
@@ -78,7 +76,6 @@ $(document).ready(function(){
   $("#icon_form").click(function(){
       $(".form").show();
   });
-// xử lý popup
 
 
   // xử lý menu icon sub
@@ -480,8 +477,6 @@ function close_image_duan_tra(){
       krpano.call("showallhotspot()");
     });
     $(".slick-slide.slick-current").click(function(e){
-      // $(".slick-slide").addclass("slick-current");
-   
       krpano.call("loadscene_with_name()");
      
     });
@@ -660,15 +655,15 @@ responsive: [
 // xư lý thumbs list
 $(document).ready(function(){
  
-  $('.slick-slide').removeClass('slick-cloned');
-  $(".icon_thumbs_up").click(function(){
-    $(".thumblist").slideToggle();
-    $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
-    });
+  // $('.slick-slide').removeClass('slick-cloned');
+  // $(".icon_thumbs_up").click(function(){
+  //   $(".thumblist").slideToggle();
+  //   // $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
+  //   });
  
   setTimeout(function() {
     $(".thumblist").slideToggle();
-    $(".icon_thumbs_up").addClass('icon_thumbs_down');
+    // $(".icon_thumbs_up").addClass('icon_thumbs_down');
  
 }, 5000);
   // xuwr lys click close popup

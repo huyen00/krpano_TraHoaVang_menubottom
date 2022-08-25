@@ -61,7 +61,6 @@ h5{
 }
 
 /* xử lý video */
-
 .map, .form, .info, .guide{
     top: 0;
     position: fixed;
@@ -87,8 +86,6 @@ h5{
 }
 
 /* info */
-
-
 .list_sub{
     display: flex;
     position: absolute;
@@ -150,7 +147,6 @@ width: 200px;
     position: absolute;
     top: -4%;
     right: -4%;
-   
     padding: 0rem 0.5rem;
     color: #ffffff;
     cursor: pointer;
@@ -322,9 +318,9 @@ width: 200px;
     width: 100%;
 }
 
-.list-thumbs .slick-next:before, [dir=rtl] .list-thumbs .slick-prev:before {
+/* .list-thumbs .slick-next:before, [dir=rtl] .list-thumbs .slick-prev:before {
     content: url(../img/next.svg);
-}
+} */
 
 
 .arrow{
@@ -864,7 +860,7 @@ width: 70%;
 
   /*  */
   .sub_action {
-    background-color: rgba(0, 0, 0, 0.539);
+    background-color: #223771b0;
     list-style: none;
     position: absolute;
     text-align: left;
@@ -989,6 +985,9 @@ width: 70%;
 .sub_menu_right{
     display: flex;
 }
+#icon_mute{
+    padding:0.5rem 1.3rem;
+}
 /*  */
 .logo_tour img{
     /* animation: zoom-in-zoom-out 2s ease-out; */
@@ -1012,3 +1011,7 @@ width: 70%;
     #icon_mute1, #icon_unmute1, #icon_rotate1, #icon_unrotate1{
         display: none;
     }
+    .slick-list.draggable {
+        padding: 0px 0px 15px !important;
+    }
+    
