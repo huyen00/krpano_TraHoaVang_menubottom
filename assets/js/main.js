@@ -431,7 +431,10 @@ function close_image_duan_tra(){
 		$("#show_menu_bottom").hide();
 		
 	});
+  // show thumblist
 	$("#show_thumbs").click(function(){
+    // $(".thumblist").css("display","block");
+    // $('.thumblist').get(0).slick.setPosition()
 		$(".thumblist").slideToggle();
 	});
 
