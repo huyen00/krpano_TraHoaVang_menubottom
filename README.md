@@ -1,3 +1,1 @@
-"# krpano_TraHoaVang" 
-"# krpano_TraHoaVang_menubottom" 
-"# menubuttom_Option2" 
+"# menu_bottom_op2" 
