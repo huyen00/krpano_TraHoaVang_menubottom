@@ -6,6 +6,7 @@ $(document).ready(function(){
 
   
    if( $(document).width() < 321){
+   
     $("#icon_menusub").click(function(){
        $(".list_menu").hide();
       });

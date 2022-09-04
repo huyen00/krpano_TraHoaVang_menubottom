@@ -1,41 +1,46 @@
 $(document).ready(function(){
   // $(".guide").hide();
-  $(".close").click(function(){
-    $(".guide").hide();
-  });
-  $(".guide").click(function(){
-      $(".guide").hide();
-  });
-  $("#icon_guide").click(function(){
-      $(".guide").show();
-  });
+  // $(".close").click(function(){
+  //   $(".guide").hide();
+  // });
+  // $(".guide").click(function(){
+  //     $(".guide").hide();
+  // });
+  // $("#icon_guide").click(function(){
+  //     $(".guide").show();
+  // });
 });
 // click info
-$(".close").click(function(){
-  $(".info").hide();
-    
-});
-$(".info").click(function(){
-    $(".info").hide();
-    
-});
+
 $("#icon_info").click(function(){
-    $(".info").show();
+  $(".info_sub").removeClass("add_slide_right");
+    $(".info_sub").addClass("add_slide_left");
     
+});
+$("#close_info_sub").click(function(){
+  $(".info_sub").removeClass("add_slide_left");
+  $(".info_sub").addClass("add_slide_right");
+  
 });
 // click show map
 $("#icon_map").click(function(){
-  $(".map").show();
+  $(".content_map").removeClass("add_slide_up");
+  $(".content_map").addClass("add_slide_down");
   
 });
-$(".close").click(function(){
-  $(".map").hide();
-    ;
+$("#close_map_sub").click(function(){
+  $(".content_map").removeClass("add_slide_down");
+  $(".content_map").addClass("add_slide_up");
+  
 });
-$(".map").click(function(){
-    $(".map").hide();
-   
-});
+// menu slide
+// $(".icon_menu_sildebar").click(function(){
+//    $(".menu_sliderbar").addClass("show_menu_tour");
+//    $(".icon_menu_sildebar").toggleClass("add_icon_rotate");
+// });
+
+
+
 // click popup 
 $(".popup").click(function(){
   $(".popup").hide();
@@ -67,37 +72,47 @@ $(document).ready(function(){
 });
 // click form
 $(document).ready(function(){
-  $(".close").click(function(){
-    $(".form").hide();
-  });
-  $(".form").click(function(){
-      $(".form").hide();
-  });
-  $("#icon_form").click(function(){
-      $(".form").show();
-  });
 
-
-  // xử lý menu icon sub
- 
   $("#icon_menusub").click(function(){
     $(".menu_sub").slideToggle();
    
   });
+ 
+  $("#icon_form").click(function(){
+    $(".contact_sub").removeClass("add_slide_up");
+      $(".contact_sub").addClass("add_slide_down");
+  });
+  $("#close_contact_sub").click(function(){
+    $(".contact_sub").removeClass("add_slide_down");
+    $(".contact_sub").addClass("add_slide_up");
+  });
+// guide
+$("#icon_guide").click(function(){
+  $(".content_guide_sub").removeClass("add_slide_up");
+    $(".content_guide_sub").addClass("add_slide_down");
+});
+$("#close_sub").click(function(){
+  $(".content_guide_sub").removeClass("add_slide_down");
+  $(".content_guide_sub").addClass("add_slide_up");
+});
+
+  // xử lý menu icon sub
+ 
+ 
 
   // xu lý show menu
-   $('.arrow-left').click(function(event){
-    $(".menu_tour").removeClass('show_menu_tour');
-    $(".menu_tour").toggleClass('hide_menu_tour');
-    $('.arrow-right').show();
-    $('.arrow-left').hide();
-   });
-   $('.arrow-right').click(function(event){
-    $(".menu_tour").removeClass('hide_menu_tour');
-    $(".menu_tour").toggleClass('show_menu_tour');
-    $('.arrow-left').show();
-    $('.arrow-right').hide();
-   })
+//    $('.arrow-left').click(function(event){
+//     $(".menu_tour").removeClass('show_menu_tour');
+//     $(".menu_tour").toggleClass('hide_menu_tour');
+//     $('.arrow-right').show();
+//     $('.arrow-left').hide();
+//    });
+//    $('.arrow-right').click(function(event){
+//     $(".menu_tour").removeClass('hide_menu_tour');
+//     $(".menu_tour").toggleClass('show_menu_tour');
+//     $('.arrow-left').show();
+//     $('.arrow-right').hide();
+//    })
 });
 
 // hs
@@ -408,19 +423,22 @@ function close_image_duan_tra(){
   $('.arrow-left').click(function(event){
 		
 		$(".menu_sliderbar").removeClass('show_menu_tour');
-		$(".logo_tour").css("display","block");
-		$(".logo_tour").addClass("transform_logo");
+		// $(".logo_tour").css("display","block");
+		// $(".logo_tour").addClass("transform_logo");
 		$(".menu_sliderbar").toggleClass('hide_menu_tour');
 		$('.arrow-right').show();
 		$('.arrow-left').hide();
 	});
+
 	$('.arrow-right').click(function(event){
-		$(".logo_tour").css("display","none");
+		// $(".logo_tour").css("display","none");
 		 $(".menu_sliderbar").removeClass('hide_menu_tour');
 		$(".menu_sliderbar").toggleClass('show_menu_tour');
 		$('.arrow-left').show();
 		$('.arrow-right').hide();
 	});
+
+
 	$("#close_menu_bottom").click(function(){
 		$(".menu_bottom").slideToggle();
 		$(".thumblist").hide();
@@ -609,4 +627,12 @@ $(".panWrapper").mousedown(function(e){
   krpano.call("showmap()");
   
 });
-
+// xu lys album
+$(".close_album").click(function(){
+  $(".album_thumb").hide();
+  $(".hide_show_menusub").show();
+});
+$("#icon_album_thumbs").click(function(){
+  $(".album_thumb").show();
+  $(".hide_show_menusub").hide();
+})

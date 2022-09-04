@@ -295,8 +295,20 @@
 
     <!-- LẤY ẢNH THUMBNAIL VÀ TIÊU DỀ CỦA SCENE ĐÍCH GÁN VÀO SỰ KIỆN HOVER HOTSPOT CỦA SCENE HIỆN TẠI -->
     <action name="get_scene_data">
+	
         showHotSpot(get(scene[get(linkedscene)].thumburl), get(scene[get(linkedscene)].title))
     </action>
+	 <action name="wobble" scope="local" args="attribute, min, max, time">
+	set(local.vverh, false);
+	calc(cal,'caller.' + attribute);
+	setinterval(calc('merc_' + caller.name), get(time), 
+			if(vverh,tween(get(cal),get(max),get(time)); set(vverh,false);
+				,
+				tween(get(cal),get(min),get(time)); set(vverh,true);
+			);
+		);
+</action>
+
 	<!-- <style name="hs_circle" url="hs_circle.png" crop="0|0|64|64" framewidth="64" frameheight="64" frame="0" lastframe="22" tooltip="" linkedscene="" linkedscene_lookat="" onclick="skin_hotspotstyle_click();" onover="tween(scale,0.85);" onout="tween(scale,0.8);" onloaded="hotspot_animate3();
     if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );"
 	/>
